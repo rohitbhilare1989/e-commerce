@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ro.productservice.dto.ProductRequest;
 import com.ro.productservice.dto.ProductResponse;
 import com.ro.productservice.service.ProductService;
+import com.ro.productservice.util.Constant;
 
 import lombok.RequiredArgsConstructor;
 
@@ -30,7 +31,7 @@ public class ProductController {
 	public ResponseEntity<String> createProduct(@RequestBody ProductRequest productRequest) {
 
 		productService.createProduct(productRequest);
-		return new ResponseEntity<String>("Product Created!", HttpStatus.CREATED);
+		return new ResponseEntity<String>(Constant.PRODUCT_CREATED, HttpStatus.CREATED);
 	}
 
 	@GetMapping
