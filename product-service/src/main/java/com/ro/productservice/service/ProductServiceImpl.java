@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.ro.productservice.dto.ProductRequest;
 import com.ro.productservice.dto.ProductResponse;
 import com.ro.productservice.exception.ResourceNotFound;
-import com.ro.productservice.exception.ResourceNotFound;
 import com.ro.productservice.model.Product;
 import com.ro.productservice.repository.ProductRepository;
 
